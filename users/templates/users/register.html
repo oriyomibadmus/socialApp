@@ -1,0 +1,17 @@
+{% extends "subApp/base.html" %}
+{% block content %}
+<div class="container">
+    {% load crispy_forms_tags %}
+    <form method="POST" class="Uniform">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            {{ form }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Sign Up</button>
+        </div>
+        <p>Already have an account? </p><a href="#">Sign In</a>
+    </form>
+</div>
+
+{% endblock content%}
