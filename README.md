@@ -1,3 +1,3 @@
 # socialApp
-A Django Social App (CRUD &amp; User Authenticcation)
+A BareBone Django app with User Authentication 
 
